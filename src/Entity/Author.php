@@ -5,6 +5,7 @@ namespace App\Entity;
 use App\Repository\AuthorRepository;
 use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=AuthorRepository::class)
@@ -24,11 +25,13 @@ class Author
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups("article")
      */
     private $name;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups("article")
      */
     private $lastName;
 

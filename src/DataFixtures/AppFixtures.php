@@ -48,7 +48,7 @@ class AppFixtures extends Fixture
                 ->setAuthorId($faker->numberBetween(0, $nbAuthors))
                 ->setCategorieId($faker->numberBetween(0, $nbCategories))
                 ->setPublishedDate($startDate)
-                ->setImage($faker->imageUrl($width = 640, $height = 480))
+                ->setImage("https://picsum.photos/720/480?random=".random_int(1,9999))
             ;
             $manager->persist($article);
         }
