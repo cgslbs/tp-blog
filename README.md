@@ -53,6 +53,24 @@ symfony console make:fixtures
 symfony console doctrine:fixtures:load
 ```
 
+# Conclusion TP
+## Les problèmes rencontrés
+```
+- démarrage très tardif sur le projet : vers 15h à cause d'une erreur liée au Manifest.json
+
+- Conséquences : objectifs revus à la baisse ; je me suis surtout concentrée sur Afficher la liste des articles en page d'accueil et le Détail (objectif réussi)
+
+- Ma pratique de Symfony remonte à loin, je me suis donc aidée d'ancien projet
+
+- Création des Entity dans le désordre : je n'ai pas pu lier l'idAuthor à un Author ; j'ai essayé de le faire avec la normalisation, mais ça n'a pas marché (j'ai appliqué ce que j'ai compris de la doc)
+
+```
+## Le mot de la fin
+````
+C'est très léger - je sais. Mais j'ai donné mon max. Bon courage pour les corrections ! 
+````
+
+
 # Doc Api-platform
 ## configuration
 [config (pagination, etc.)](https://api-platform.com/docs/core/configuration/)
